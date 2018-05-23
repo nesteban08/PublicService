@@ -1,12 +1,13 @@
 {
  "name": "node-api-rest-pagoServicios",
  "version": "2.0.0",
- "description": "Aplicación de ejemplo en Express.js con Docker",
+ "description": "Aplicación para pago de servicios",
  "main": "index.js",
 "scripts": {
     "start": "node index.js",
     "test": "mocha"
  },
+ "author": "ssanchez",
  "dependencies": {
  "mongoose": "~3.6.11",
  "express": "^4.7.1",
