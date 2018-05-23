@@ -1,0 +1,35 @@
+#%RAML 1.0
+title: Servicio Routing 
+mediaType: application/json
+baseUri: http://localhost:3000/
+version: v1
+
+
+/consultar/{idFactura}:
+   get:
+       description: Retorna la factura , identificar de operador y servicio, junto con otros detalles
+       responses:
+           200:
+               body:
+                  application/json:
+                           properties:
+                             factura: number
+           404:
+               body:
+                   application/json
+/pagarfac/{idFactura}{medio}{valor}{canal}:
+   get:
+       description: Retorna ok si el pago es de la factura es exitoso
+       responses:
+           200:
+               body:
+                  application/json:
+                           properties:
+                             factura1: number
+                             medio: string
+                             valor: string
+                             canal: string
+                             mensajeOK: string
+           404:
+               body:
+                   application/json

@@ -1,0 +1,17 @@
+{
+ "name": "node-api-rest-pagoServicios",
+ "version": "2.0.0",
+ "description": "Aplicación para pago de servicios",
+ "main": "index.js",
+"scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+ },
+ "author": "ssanchez",
+ "dependencies": {
+ "mongoose": "~3.6.11",
+ "express": "^4.7.1",
+ "method-override": "^2.1.2",
+ "body-parser": "^1.5.1"
+ }
+}
